@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kankitsi Company Limited – Construction, Supplies &amp; Business Loans | Kasese</title>
+  <meta name="description" content="Kankitsi Company Limited provides construction, civil works, general supplies, and business loans in Kasese, Uganda." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ---- Auto-slide timer ---- */
+    .hero-slide { pointer-events: none; }
+    .hero-slide.active { pointer-events: all; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🏗</span>
+        <span class="logo-text">Kankitsi <span class="logo-thin">Company Limited</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('main-nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="construction.html">Construction &amp; Civil Works</a></li>
+          <li><a href="supplies.html">Supplies</a></li>
+          <li><a href="loans.html">Business Loans</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="btn btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SLIDESHOW ===== -->
+  <section class="hero-slideshow" id="heroSlideshow">
+
+    <!-- Slide 1 — Construction site -->
+    <div class="hero-slide active">
+      <div class="slide-bg slide-bg-1"></div>
+      <div class="slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <span class="hero-badge">📍 Based in Kasese, Uganda</span>
+        <h1>Building Kasese<br>from the Ground Up</h1>
+        <p class="hero-sub">Professional construction and civil works across Kasese District and the Rwenzori region — roads, buildings, drainage, and more.</p>
+        <div class="hero-ctas">
+          <a href="construction.html" class="btn btn-primary">Request a Construction Quote</a>
+          <a href="projects.html" class="btn btn-outline-light">View Our Projects</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Supply lorries -->
+    <div class="hero-slide">
+      <div class="slide-bg slide-bg-2"></div>
+      <div class="slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <span class="hero-badge">📦 Fast, Reliable Delivery</span>
+        <h1>Supplies Delivered<br>to Your Site</h1>
+        <p class="hero-sub">Building materials, office furniture, stationery and equipment — sourced, loaded onto our lorries, and delivered anywhere in Kasese District.</p>
+        <div class="hero-ctas">
+          <a href="supplies.html" class="btn btn-primary">Request a Supply Quote</a>
+          <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 — Administration / office team -->
+    <div class="hero-slide">
+      <div class="slide-bg slide-bg-3"></div>
+      <div class="slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <span class="hero-badge">🤝 Local, Personal Service</span>
+        <h1>A Team You Can<br>Talk to Face to Face</h1>
+        <p class="hero-sub">Our administration and finance team is based in Kasese Town. Walk in, call, or email — we respond quickly and keep things simple.</p>
+        <div class="hero-ctas">
+          <a href="about.html" class="btn btn-primary">Meet Our Team</a>
+          <a href="contact.html" class="btn btn-outline-light">Find Our Office</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 — Business loans / supplies warehouse -->
+    <div class="hero-slide">
+      <div class="slide-bg slide-bg-4"></div>
+      <div class="slide-overlay"></div>
+      <div class="container hero-slide-content">
+        <span class="hero-badge">💰 Business Finance</span>
+        <h1>Grow Your Business<br>with a Local Loan</h1>
+        <p class="hero-sub">Flexible business loans for traders, contractors, and entrepreneurs in Kasese — with straightforward terms and a team that knows the local market.</p>
+        <div class="hero-ctas">
+          <a href="loans.html" class="btn btn-primary">Ask About a Business Loan</a>
+          <a href="contact.html" class="btn btn-outline-light">Contact Us Today</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow controls -->
+    <button class="slide-prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#8592;</button>
+    <button class="slide-next" onclick="moveSlide(1)"  aria-label="Next slide">&#8594;</button>
+
+    <!-- Dot indicators -->
+    <div class="slide-dots">
+      <button class="slide-dot active" onclick="goToSlide(0)"></button>
+      <button class="slide-dot"        onclick="goToSlide(1)"></button>
+      <button class="slide-dot"        onclick="goToSlide(2)"></button>
+      <button class="slide-dot"        onclick="goToSlide(3)"></button>
+    </div>
+
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div class="trust-bar">
+    <div class="container trust-items">
+      <div class="trust-item">
+        <strong>10+ Years</strong>
+        <span>Operating in Kasese</span>
+      </div>
+      <div class="trust-item">
+        <strong>50+ Projects</strong>
+        <span>Completed &amp; Delivered</span>
+      </div>
+      <div class="trust-item">
+        <strong>Government &amp; Private</strong>
+        <span>Clients Served</span>
+      </div>
+      <div class="trust-item">
+        <strong>Licensed &amp; Registered</strong>
+        <span>Uganda Revenue Authority</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES OVERVIEW ===== -->
+  <section class="section services-overview">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We Do</h2>
+        <p>Three core service lines — one trusted local company.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🏛️</div>
+          <h3>Construction &amp; Civil Works</h3>
+          <p>Buildings, roads, drainage, and facility maintenance for government bodies, NGOs, and private clients across Kasese District and beyond.</p>
+          <ul class="service-list">
+            <li>Residential &amp; commercial buildings</li>
+            <li>Roads &amp; drainage systems</li>
+            <li>Renovation &amp; maintenance</li>
+            <li>Project management</li>
+          </ul>
+          <a href="construction.html" class="btn btn-secondary">Learn More →</a>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-badge-featured">Most Requested</div>
+          <div class="service-icon">📦</div>
+          <h3>General Supplies</h3>
+          <p>Construction materials, institutional furniture, office supplies, and equipment sourced and delivered to your site or office.</p>
+          <ul class="service-list">
+            <li>Building materials</li>
+            <li>Institutional &amp; office furniture</li>
+            <li>Office stationery &amp; equipment</li>
+            <li>Customised procurement</li>
+          </ul>
+          <a href="supplies.html" class="btn btn-primary">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💰</div>
+          <h3>Business Loans</h3>
+          <p>Flexible financing for small businesses, traders, and entrepreneurs in the Kasese area — straightforward terms and fast processing.</p>
+          <ul class="service-list">
+            <li>Working capital loans</li>
+            <li>Asset finance</li>
+            <li>Short &amp; medium-term options</li>
+            <li>Local, personal service</li>
+          </ul>
+          <a href="loans.html" class="btn btn-secondary">Learn More →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOVING IMAGE GALLERY ===== -->
+  <section class="scroll-gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Work in Action</h2>
+        <p>Officials, construction sites, supply lorries and warehouses — hover to pause.</p>
+      </div>
+    </div>
+
+    <!-- Row 1 — left to right -->
+    <div class="scroll-track-wrap">
+      <div class="scroll-track">
+
+        <!-- Card 1 -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-construction-1">
+            <!-- Replace img src with your real photo: <img src="images/site1.jpg" alt="Construction site" /> -->
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="darkgreen"/>
+              <rect x="0" y="140" width="280" height="50" fill="sienna" opacity=".5"/>
+              <rect x="30" y="50" width="90" height="90" fill="none" stroke="lightgreen" stroke-width="3"/>
+              <rect x="45" y="65" width="25" height="30" fill="lightyellow" opacity=".4"/>
+              <rect x="80" y="65" width="25" height="30" fill="lightyellow" opacity=".4"/>
+              <rect x="45" y="105" width="60" height="35" fill="lightyellow" opacity=".3"/>
+              <line x1="130" y1="50" x2="130" y2="140" stroke="orange" stroke-width="2"/>
+              <line x1="140" y1="50" x2="140" y2="140" stroke="orange" stroke-width="2"/>
+              <line x1="130" y1="70" x2="140" y2="70" stroke="orange" stroke-width="2"/>
+              <line x1="130" y1="90" x2="140" y2="90" stroke="orange" stroke-width="2"/>
+              <line x1="130" y1="110" x2="140" y2="110" stroke="orange" stroke-width="2"/>
+              <line x1="180" y1="20" x2="180" y2="140" stroke="yellow" stroke-width="3"/>
+              <line x1="180" y1="20" x2="240" y2="40" stroke="yellow" stroke-width="3"/>
+              <circle cx="70" cy="133" r="6" fill="yellow" opacity=".7"/>
+              <rect x="66" y="139" width="8" height="14" fill="orange" opacity=".7"/>
+              <circle cx="100" cy="130" r="6" fill="yellow" opacity=".7"/>
+              <rect x="96" y="136" width="8" height="16" fill="darkorange" opacity=".7"/>
+            </svg>
+            <span>🏗</span>
+            <small>Construction site<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Construction Site — Kasese</div>
+        </div>
+
+        <!-- Card 2 — lorry -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-lorry-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="peru"/>
+              <rect x="0" y="110" width="280" height="80" fill="gray" opacity=".4"/>
+              <rect x="30" y="85" width="10" height="50" fill="yellow" opacity=".5"/>
+              <rect x="90" y="85" width="10" height="50" fill="yellow" opacity=".5"/>
+              <rect x="150" y="85" width="10" height="50" fill="yellow" opacity=".5"/>
+              <rect x="210" y="85" width="10" height="50" fill="yellow" opacity=".5"/>
+              <!-- lorry body -->
+              <rect x="30" y="60" width="160" height="60" rx="4" fill="steelblue" opacity=".8"/>
+              <!-- cab -->
+              <rect x="170" y="48" width="80" height="72" rx="6" fill="royalblue" opacity=".9"/>
+              <!-- windscreen -->
+              <rect x="178" y="55" width="60" height="35" rx="3" fill="lightskyblue" opacity=".6"/>
+              <!-- wheels -->
+              <circle cx="70"  cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="70"  cy="128" r="10" fill="dimgray"/>
+              <circle cx="150" cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="150" cy="128" r="10" fill="dimgray"/>
+              <circle cx="220" cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="220" cy="128" r="10" fill="dimgray"/>
+              <!-- cargo -->
+              <rect x="40"  y="72" width="38" height="30" fill="goldenrod" opacity=".6"/>
+              <rect x="82"  y="72" width="38" height="30" fill="peru" opacity=".6"/>
+              <rect x="124" y="72" width="38" height="30" fill="goldenrod" opacity=".6"/>
+            </svg>
+            <span>🚛</span>
+            <small>Supply lorry<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Supply Lorry — Materials Delivery</div>
+        </div>
+
+        <!-- Card 3 — office/admin -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-admin-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="steelblue"/>
+              <rect x="0" y="130" width="280" height="60" fill="tan" opacity=".3"/>
+              <!-- desk 1 -->
+              <rect x="20" y="110" width="80" height="28" rx="3" fill="burlywood" opacity=".7"/>
+              <rect x="30" y="80" width="28" height="30" fill="silver" opacity=".5"/>
+              <rect x="24" y="70" width="38" height="22" rx="2" fill="lightskyblue" opacity=".6"/>
+              <circle cx="52" cy="92" r="10" fill="peachpuff" opacity=".7"/>
+              <rect x="47" y="102" width="10" height="22" fill="navy" opacity=".7"/>
+              <!-- desk 2 -->
+              <rect x="115" y="108" width="80" height="28" rx="3" fill="burlywood" opacity=".7"/>
+              <rect x="125" y="78" width="28" height="30" fill="silver" opacity=".5"/>
+              <rect x="119" y="68" width="38" height="22" rx="2" fill="lightskyblue" opacity=".6"/>
+              <circle cx="147" cy="90" r="10" fill="bisque" opacity=".7"/>
+              <rect x="142" y="100" width="10" height="22" fill="green" opacity=".7"/>
+              <!-- desk 3 -->
+              <rect x="210" y="110" width="60" height="28" rx="3" fill="burlywood" opacity=".7"/>
+              <rect x="218" y="80" width="28" height="30" fill="silver" opacity=".5"/>
+              <rect x="212" y="70" width="38" height="22" rx="2" fill="lightskyblue" opacity=".6"/>
+              <circle cx="240" cy="92" r="10" fill="peachpuff" opacity=".7"/>
+              <rect x="235" y="102" width="10" height="22" fill="darkred" opacity=".7"/>
+              <!-- windows -->
+              <rect x="20" y="20" width="50" height="30" rx="2" fill="gold" opacity=".2"/>
+              <rect x="210" y="20" width="50" height="30" rx="2" fill="gold" opacity=".2"/>
+            </svg>
+            <span>👔</span>
+            <small>Administration office<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Administration — Kasese Office</div>
+        </div>
+
+        <!-- Card 4 — road civil works -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-road-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="darkolivegreen"/>
+              <rect x="0" y="110" width="280" height="80" fill="gray" opacity=".5"/>
+              <rect x="0" y="130" width="280" height="10" fill="darkgray" opacity=".4"/>
+              <rect x="20"  y="150" width="50" height="6" fill="yellow" opacity=".6"/>
+              <rect x="90"  y="150" width="50" height="6" fill="yellow" opacity=".6"/>
+              <rect x="160" y="150" width="50" height="6" fill="yellow" opacity=".6"/>
+              <rect x="230" y="150" width="50" height="6" fill="yellow" opacity=".6"/>
+              <!-- grader machine -->
+              <rect x="80" y="80" width="120" height="45" rx="4" fill="orange" opacity=".75"/>
+              <rect x="60" y="90" width="30" height="12" fill="darkorange" opacity=".7"/>
+              <rect x="190" y="90" width="30" height="12" fill="darkorange" opacity=".7"/>
+              <circle cx="90"  cy="128" r="18" fill="black" opacity=".8"/>
+              <circle cx="90"  cy="128" r="8"  fill="dimgray"/>
+              <circle cx="190" cy="128" r="18" fill="black" opacity=".8"/>
+              <circle cx="190" cy="128" r="8"  fill="dimgray"/>
+              <rect x="130" y="68" width="20" height="20" rx="2" fill="lightskyblue" opacity=".5"/>
+              <!-- workers -->
+              <circle cx="30" cy="102" r="6" fill="yellow" opacity=".7"/>
+              <rect x="26" y="108" width="8" height="14" fill="orange" opacity=".7"/>
+              <circle cx="250" cy="102" r="6" fill="yellow" opacity=".7"/>
+              <rect x="246" y="108" width="8" height="14" fill="orange" opacity=".7"/>
+            </svg>
+            <span>🛣</span>
+            <small>Road rehabilitation<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Road Works — Civil Engineering</div>
+        </div>
+
+        <!-- Card 5 — supplies warehouse -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-supplies-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="indigo"/>
+              <rect x="0" y="145" width="280" height="45" fill="olive" opacity=".4"/>
+              <!-- warehouse -->
+              <rect x="20" y="70" width="140" height="90" fill="gray" opacity=".35"/>
+              <polygon points="20,70 90,30 160,70" fill="darkgray" opacity=".4"/>
+              <!-- shelves -->
+              <rect x="35" y="100" width="50" height="6" fill="silver" opacity=".6"/>
+              <rect x="35" y="118" width="50" height="6" fill="silver" opacity=".6"/>
+              <rect x="35" y="136" width="50" height="6" fill="silver" opacity=".6"/>
+              <rect x="95" y="100" width="50" height="6" fill="silver" opacity=".6"/>
+              <rect x="95" y="118" width="50" height="6" fill="silver" opacity=".6"/>
+              <!-- boxes -->
+              <rect x="40"  y="88"  width="18" height="12" fill="goldenrod" opacity=".6"/>
+              <rect x="62"  y="88"  width="18" height="12" fill="sienna"    opacity=".6"/>
+              <rect x="40"  y="106" width="18" height="12" fill="goldenrod" opacity=".6"/>
+              <rect x="100" y="88"  width="18" height="12" fill="peru"      opacity=".6"/>
+              <!-- forklift -->
+              <rect x="195" y="118" width="60" height="38" rx="3" fill="orange" opacity=".6"/>
+              <rect x="175" y="124" width="22" height="6"  fill="yellow"   opacity=".6"/>
+              <rect x="175" y="136" width="22" height="6"  fill="yellow"   opacity=".6"/>
+              <circle cx="210" cy="156" r="12" fill="black" opacity=".7"/>
+              <circle cx="246" cy="156" r="12" fill="black" opacity=".7"/>
+            </svg>
+            <span>📦</span>
+            <small>Supplies warehouse<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Supplies Warehouse — Ready for Dispatch</div>
+        </div>
+
+        <!-- Card 6 — building handover -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-construction-2">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="seagreen"/>
+              <rect x="0" y="145" width="280" height="45" fill="sienna" opacity=".4"/>
+              <!-- completed building -->
+              <rect x="40" y="60" width="200" height="90" fill="lightyellow" opacity=".25"/>
+              <rect x="40" y="60" width="200" height="90" fill="none" stroke="white" stroke-width="2" opacity=".5"/>
+              <!-- windows row 1 -->
+              <rect x="60"  y="75" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="105" y="75" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="150" y="75" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="195" y="75" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <!-- windows row 2 -->
+              <rect x="60"  y="110" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="105" y="110" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="150" y="110" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="195" y="110" width="30" height="22" rx="2" fill="lightskyblue" opacity=".5"/>
+              <!-- door -->
+              <rect x="118" y="120" width="44" height="30" rx="2" fill="peru" opacity=".6"/>
+              <!-- roof -->
+              <polygon points="20,60 140,15 260,60" fill="sienna" opacity=".5"/>
+            </svg>
+            <span>🏢</span>
+            <small>Completed building<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Completed Building — Kasese District</div>
+        </div>
+
+        <!-- Card 7 — second lorry -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-lorry-2">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="sienna"/>
+              <rect x="0" y="110" width="280" height="80" fill="gray" opacity=".35"/>
+              <!-- second lorry facing other way -->
+              <rect x="90" y="62" width="160" height="58" rx="4" fill="orange" opacity=".8"/>
+              <rect x="30"  y="50" width="80" height="70" rx="6" fill="darkorange" opacity=".9"/>
+              <rect x="38"  y="57" width="58" height="34" rx="3" fill="lightskyblue" opacity=".6"/>
+              <circle cx="70"  cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="70"  cy="128" r="10" fill="dimgray"/>
+              <circle cx="160" cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="160" cy="128" r="10" fill="dimgray"/>
+              <circle cx="230" cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="230" cy="128" r="10" fill="dimgray"/>
+              <!-- cement bags -->
+              <rect x="100" y="74" width="35" height="22" rx="2" fill="lightgray" opacity=".6"/>
+              <rect x="140" y="74" width="35" height="22" rx="2" fill="lightgray" opacity=".6"/>
+              <rect x="180" y="74" width="35" height="22" rx="2" fill="lightgray" opacity=".6"/>
+            </svg>
+            <span>🚚</span>
+            <small>Loaded supply lorry<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Materials on the Move — Kasese</div>
+        </div>
+
+        <!-- Card 8 — senior official -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-admin-2">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="teal"/>
+              <rect x="0" y="150" width="280" height="40" fill="beige" opacity=".3"/>
+              <!-- podium/desk -->
+              <rect x="90" y="118" width="100" height="40" rx="4" fill="burlywood" opacity=".6"/>
+              <!-- person -->
+              <circle cx="140" cy="80" r="22" fill="peachpuff" opacity=".8"/>
+              <rect x="118" y="102" width="44" height="50" fill="darkblue" opacity=".8"/>
+              <!-- collar/tie -->
+              <polygon points="140,106 148,120 140,128 132,120" fill="red" opacity=".7"/>
+              <!-- arms -->
+              <rect x="94"  y="104" width="28" height="12" rx="4" fill="darkblue" opacity=".7"/>
+              <rect x="158" y="104" width="28" height="12" rx="4" fill="darkblue" opacity=".7"/>
+              <!-- badge -->
+              <rect x="128" y="108" width="18" height="10" rx="2" fill="gold" opacity=".6"/>
+              <!-- flag/background detail -->
+              <rect x="20" y="20" width="10" height="80" fill="green" opacity=".5"/>
+              <rect x="30" y="20" width="40" height="30" fill="orange" opacity=".5"/>
+            </svg>
+            <span>👨‍💼</span>
+            <small>Company official<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Company Director — Kankitsi</div>
+        </div>
+
+        <!-- Duplicate first 4 cards to make seamless loop -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-construction-3">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="olivedrab"/>
+              <rect x="0" y="145" width="280" height="45" fill="sienna" opacity=".4"/>
+              <rect x="30" y="50" width="130" height="100" fill="none" stroke="lightgreen" stroke-width="2" opacity=".5"/>
+              <rect x="30" y="50" width="130" height="100" fill="lightyellow" opacity=".1"/>
+              <rect x="50"  y="68" width="30" height="24" fill="lightskyblue" opacity=".4"/>
+              <rect x="95"  y="68" width="30" height="24" fill="lightskyblue" opacity=".4"/>
+              <rect x="140" y="68" width="20" height="24" rx="1" fill="lightskyblue" opacity=".4"/>
+              <rect x="50"  y="104" width="30" height="24" fill="lightskyblue" opacity=".4"/>
+              <rect x="95"  y="104" width="30" height="24" fill="lightskyblue" opacity=".4"/>
+              <rect x="66" y="118" width="28" height="32" fill="peru" opacity=".5"/>
+              <line x1="175" y1="30" x2="175" y2="150" stroke="orange" stroke-width="2.5"/>
+              <line x1="185" y1="30" x2="185" y2="150" stroke="orange" stroke-width="2.5"/>
+              <line x1="175" y1="55"  x2="185" y2="55"  stroke="orange" stroke-width="2"/>
+              <line x1="175" y1="85"  x2="185" y2="85"  stroke="orange" stroke-width="2"/>
+              <line x1="175" y1="115" x2="185" y2="115" stroke="orange" stroke-width="2"/>
+            </svg>
+            <span>🏗</span>
+            <small>Building under construction<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Building Construction — Kasese</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-lorry-3">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="chocolate"/>
+              <rect x="0" y="110" width="280" height="80" fill="gray" opacity=".35"/>
+              <rect x="20" y="80" width="170" height="52" rx="4" fill="steelblue" opacity=".8"/>
+              <rect x="170" y="68" width="90" height="64" rx="6" fill="royalblue" opacity=".9"/>
+              <rect x="178" y="74" width="70" height="38" rx="3" fill="lightskyblue" opacity=".6"/>
+              <circle cx="60"  cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="60"  cy="128" r="10" fill="dimgray"/>
+              <circle cx="140" cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="140" cy="128" r="10" fill="dimgray"/>
+              <circle cx="220" cy="128" r="22" fill="black" opacity=".9"/>
+              <circle cx="220" cy="128" r="10" fill="dimgray"/>
+              <rect x="30" y="92" width="38" height="22" fill="goldenrod" opacity=".6"/>
+              <rect x="72" y="92" width="38" height="22" fill="sienna"    opacity=".6"/>
+              <rect x="114" y="92" width="38" height="22" fill="goldenrod" opacity=".6"/>
+            </svg>
+            <span>🚛</span>
+            <small>Delivery lorry<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Supply Vehicle — Ready for Delivery</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-admin-3">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="darkslateblue"/>
+              <rect x="0" y="145" width="280" height="45" fill="beige" opacity=".2"/>
+              <!-- meeting table -->
+              <ellipse cx="140" cy="130" rx="100" ry="30" fill="burlywood" opacity=".5"/>
+              <!-- people around table -->
+              <circle cx="60"  cy="108" r="12" fill="peachpuff" opacity=".75"/>
+              <rect x="54"  y="120" width="12" height="22" fill="green"   opacity=".7"/>
+              <circle cx="110" cy="100" r="12" fill="bisque"    opacity=".75"/>
+              <rect x="104" y="112" width="12" height="22" fill="darkblue" opacity=".7"/>
+              <circle cx="160" cy="98"  r="12" fill="peachpuff" opacity=".75"/>
+              <rect x="154" y="110" width="12" height="22" fill="maroon"  opacity=".7"/>
+              <circle cx="210" cy="104" r="12" fill="bisque"    opacity=".75"/>
+              <rect x="204" y="116" width="12" height="22" fill="teal"    opacity=".7"/>
+              <!-- papers on table -->
+              <rect x="100" y="122" width="30" height="18" rx="2" fill="white"  opacity=".3"/>
+              <rect x="150" y="120" width="30" height="18" rx="2" fill="white"  opacity=".3"/>
+              <!-- projector beam -->
+              <polygon points="20,30 20,60 90,80 90,10" fill="yellow" opacity=".1"/>
+              <rect x="10" y="25" width="18" height="12" rx="2" fill="silver" opacity=".5"/>
+            </svg>
+            <span>👥</span>
+            <small>Management meeting<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Management Team — Planning Session</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-supplies-2">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="darkcyan"/>
+              <rect x="0" y="145" width="280" height="45" fill="gray" opacity=".3"/>
+              <!-- iron sheets stacked -->
+              <rect x="20" y="80" width="80" height="8"  fill="silver" opacity=".7"/>
+              <rect x="20" y="88" width="80" height="8"  fill="darkgray" opacity=".6"/>
+              <rect x="20" y="96" width="80" height="8"  fill="silver" opacity=".7"/>
+              <rect x="20" y="104" width="80" height="8" fill="darkgray" opacity=".6"/>
+              <rect x="20" y="112" width="80" height="8" fill="silver" opacity=".7"/>
+              <!-- cement bags -->
+              <rect x="120" y="90"  width="40" height="28" rx="3" fill="lightgray" opacity=".7"/>
+              <rect x="120" y="118" width="40" height="28" rx="3" fill="whitesmoke" opacity=".6"/>
+              <rect x="162" y="90"  width="40" height="28" rx="3" fill="lightgray"  opacity=".7"/>
+              <rect x="162" y="118" width="40" height="28" rx="3" fill="whitesmoke" opacity=".6"/>
+              <!-- reinforcement bars -->
+              <line x1="210" y1="70" x2="260" y2="70" stroke="orange" stroke-width="6" opacity=".7"/>
+              <line x1="210" y1="82" x2="260" y2="82" stroke="orange" stroke-width="6" opacity=".7"/>
+              <line x1="210" y1="94" x2="260" y2="94" stroke="orange" stroke-width="6" opacity=".7"/>
+              <line x1="210" y1="106" x2="260" y2="106" stroke="orange" stroke-width="6" opacity=".7"/>
+              <line x1="210" y1="118" x2="260" y2="118" stroke="orange" stroke-width="6" opacity=".7"/>
+            </svg>
+            <span>🧱</span>
+            <small>Building materials stock<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Construction Materials — In Stock</div>
+        </div>
+
+      </div><!-- end scroll-track row 1 -->
+    </div>
+
+    <!-- Row 2 — right to left (reverse direction) -->
+    <div class="scroll-track-wrap" style="margin-top: 16px;">
+      <div class="scroll-track reverse">
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-road-2">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="saddlebrown"/>
+              <rect x="0" y="120" width="280" height="70" fill="gray" opacity=".45"/>
+              <!-- culvert -->
+              <ellipse cx="140" cy="130" rx="30" ry="18" fill="darkgray" opacity=".7"/>
+              <ellipse cx="140" cy="130" rx="22" ry="12" fill="black"    opacity=".6"/>
+              <rect x="0" y="118" width="280" height="10" fill="sienna" opacity=".5"/>
+              <!-- workers with tools -->
+              <circle cx="50"  cy="108" r="8" fill="yellow" opacity=".7"/>
+              <rect x="46"  y="116" width="8" height="18" fill="orange" opacity=".7"/>
+              <line x1="50" y1="116" x2="40" y2="136" stroke="gray" stroke-width="3" opacity=".6"/>
+              <circle cx="200" cy="105" r="8" fill="yellow" opacity=".7"/>
+              <rect x="196" y="113" width="8" height="18" fill="darkorange" opacity=".7"/>
+              <line x1="200" y1="113" x2="215" y2="133" stroke="gray" stroke-width="3" opacity=".6"/>
+              <!-- excavator arm -->
+              <line x1="230" y1="40" x2="200" y2="90" stroke="orange" stroke-width="6" opacity=".7"/>
+              <line x1="200" y1="90" x2="180" y2="118" stroke="orange" stroke-width="5" opacity=".7"/>
+              <polygon points="175,112 190,118 185,130 170,124" fill="orange" opacity=".7"/>
+              <rect x="220" y="100" width="50" height="30" rx="4" fill="orange" opacity=".6"/>
+              <circle cx="235" cy="130" r="15" fill="black" opacity=".8"/>
+              <circle cx="255" cy="130" r="15" fill="black" opacity=".8"/>
+            </svg>
+            <span>⛏</span>
+            <small>Culvert installation<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Drainage &amp; Culvert Works</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-admin-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="steelblue"/>
+              <!-- office building exterior -->
+              <rect x="30" y="40" width="220" height="130" fill="lightyellow" opacity=".2"/>
+              <rect x="30" y="40" width="220" height="130" fill="none" stroke="white" stroke-width="2" opacity=".4"/>
+              <rect x="0" y="30" width="280" height="14" fill="white" opacity=".15"/>
+              <!-- company sign -->
+              <rect x="80" y="48" width="120" height="28" rx="3" fill="darkgreen" opacity=".8"/>
+              <rect x="88" y="54" width="104" height="16" rx="2" fill="green" opacity=".6"/>
+              <!-- windows -->
+              <rect x="50"  y="85" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="100" y="85" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="150" y="85" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="200" y="85" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="50"  y="122" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="100" y="122" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="150" y="122" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <rect x="200" y="122" width="35" height="25" rx="2" fill="lightskyblue" opacity=".5"/>
+              <!-- door -->
+              <rect x="118" y="140" width="44" height="30" rx="2" fill="peru" opacity=".5"/>
+              <!-- person entering -->
+              <circle cx="260" cy="148" r="8" fill="peachpuff" opacity=".7"/>
+              <rect x="255" y="156" width="10" height="18" fill="navy" opacity=".7"/>
+            </svg>
+            <span>🏢</span>
+            <small>Kankitsi main office<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Kankitsi Office — Kasese Town</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-construction-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="darkgreen"/>
+              <rect x="0" y="150" width="280" height="40" fill="sienna" opacity=".4"/>
+              <!-- foundation laying -->
+              <rect x="20" y="130" width="240" height="20" fill="gray" opacity=".5"/>
+              <!-- columns going up -->
+              <rect x="40"  y="60" width="18" height="90" fill="lightgray" opacity=".5"/>
+              <rect x="90"  y="80" width="18" height="70" fill="lightgray" opacity=".5"/>
+              <rect x="140" y="70" width="18" height="80" fill="lightgray" opacity=".5"/>
+              <rect x="190" y="55" width="18" height="95" fill="lightgray" opacity=".5"/>
+              <rect x="240" y="68" width="18" height="82" fill="lightgray" opacity=".5"/>
+              <!-- workers -->
+              <circle cx="65"  cy="105" r="7" fill="yellow" opacity=".7"/>
+              <rect x="61"  y="112" width="8" height="16" fill="orange" opacity=".7"/>
+              <circle cx="165" cy="100" r="7" fill="yellow" opacity=".7"/>
+              <rect x="161" y="107" width="8" height="16" fill="darkorange" opacity=".7"/>
+              <!-- mixing cement -->
+              <ellipse cx="230" cy="128" rx="20" ry="10" fill="gray" opacity=".6"/>
+              <ellipse cx="230" cy="124" rx="16" ry="7"  fill="lightgray" opacity=".5"/>
+            </svg>
+            <span>⚒</span>
+            <small>Foundation works<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Foundation &amp; Column Work</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-lorry-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="peru"/>
+              <rect x="0" y="115" width="280" height="75" fill="gray" opacity=".4"/>
+              <!-- furniture on lorry -->
+              <rect x="20" y="70" width="180" height="55" rx="4" fill="steelblue" opacity=".8"/>
+              <rect x="30" y="80" width="30" height="20" fill="brown"      opacity=".6"/>
+              <rect x="66" y="78" width="30" height="22" fill="saddlebrown" opacity=".6"/>
+              <rect x="102" y="80" width="30" height="20" fill="brown"      opacity=".6"/>
+              <rect x="138" y="76" width="40" height="24" fill="burlywood"  opacity=".6"/>
+              <rect x="185" y="80" width="10" height="18" fill="sienna"     opacity=".5"/>
+              <!-- cab -->
+              <rect x="190" y="58" width="80" height="67" rx="6" fill="royalblue" opacity=".9"/>
+              <rect x="198" y="65" width="62" height="38" rx="3" fill="lightskyblue" opacity=".6"/>
+              <circle cx="60"  cy="130" r="22" fill="black" opacity=".9"/>
+              <circle cx="60"  cy="130" r="10" fill="dimgray"/>
+              <circle cx="150" cy="130" r="22" fill="black" opacity=".9"/>
+              <circle cx="150" cy="130" r="10" fill="dimgray"/>
+              <circle cx="230" cy="130" r="22" fill="black" opacity=".9"/>
+              <circle cx="230" cy="130" r="10" fill="dimgray"/>
+            </svg>
+            <span>🛻</span>
+            <small>Furniture delivery lorry<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Furniture Supply — School Delivery</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-admin-2">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="teal"/>
+              <rect x="0" y="150" width="280" height="40" fill="beige" opacity=".2"/>
+              <!-- site supervisor with hard hat on site -->
+              <circle cx="140" cy="65" r="20" fill="peachpuff" opacity=".8"/>
+              <!-- hard hat -->
+              <ellipse cx="140" cy="52" rx="24" ry="10" fill="orange" opacity=".9"/>
+              <rect x="118" y="52" width="44" height="8" fill="orange" opacity=".7"/>
+              <!-- body / hi-vis vest -->
+              <rect x="118" y="85" width="44" height="50" fill="orange" opacity=".75"/>
+              <rect x="122" y="85" width="36" height="50" fill="darkorange" opacity=".3"/>
+              <!-- clipboard -->
+              <rect x="155" y="90" width="22" height="28" rx="2" fill="white"  opacity=".6"/>
+              <line x1="159" y1="96"  x2="173" y2="96"  stroke="gray" stroke-width="1.5"/>
+              <line x1="159" y1="102" x2="173" y2="102" stroke="gray" stroke-width="1.5"/>
+              <line x1="159" y1="108" x2="173" y2="108" stroke="gray" stroke-width="1.5"/>
+              <!-- arms -->
+              <rect x="96"  y="87" width="26" height="10" rx="4" fill="orange" opacity=".7"/>
+              <rect x="158" y="87" width="26" height="10" rx="4" fill="orange" opacity=".7"/>
+              <!-- site background -->
+              <rect x="0" y="145" width="280" height="10" fill="gray" opacity=".4"/>
+              <rect x="30" y="120" width="60" height="30" fill="sienna" opacity=".3"/>
+              <rect x="190" y="115" width="60" height="35" fill="sienna" opacity=".3"/>
+            </svg>
+            <span>👷</span>
+            <small>Site supervisor<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Site Supervisor — Project Oversight</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-supplies-1">
+            <svg viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%">
+              <rect width="280" height="190" fill="indigo"/>
+              <rect x="0" y="150" width="280" height="40" fill="gray" opacity=".3"/>
+              <!-- office furniture display -->
+              <!-- executive desk -->
+              <rect x="40" y="100" width="120" height="10" rx="2" fill="burlywood" opacity=".7"/>
+              <rect x="44"  y="110" width="10" height="40" fill="sienna" opacity=".6"/>
+              <rect x="146" y="110" width="10" height="40" fill="sienna" opacity=".6"/>
+              <!-- computer -->
+              <rect x="80" y="78" width="40" height="25" rx="2" fill="silver"       opacity=".6"/>
+              <rect x="82" y="80" width="36" height="21" rx="1" fill="lightskyblue" opacity=".5"/>
+              <rect x="94" y="103" width="12" height="4"  fill="darkgray" opacity=".5"/>
+              <!-- chair -->
+              <rect x="170" y="90" width="50" height="40" rx="4" fill="darkblue" opacity=".6"/>
+              <rect x="176" y="90" width="38" height="10" rx="2" fill="royalblue" opacity=".5"/>
+              <rect x="183" y="130" width="8" height="20" fill="darkgray" opacity=".5"/>
+              <ellipse cx="187" cy="150" rx="18" ry="6"  fill="darkgray" opacity=".5"/>
+              <!-- person -->
+              <circle cx="90" cy="68" r="10" fill="bisque" opacity=".75"/>
+              <rect x="84" y="78" width="12" height="24" fill="darkblue" opacity=".6"/>
+            </svg>
+            <span>🪑</span>
+            <small>Office furniture supply<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Office Furniture — Ready to Deliver</div>
+        </div>
+
+        <!-- repeat a couple to fill the reverse row -->
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-road-1">
+            <span style="font-size:3rem">🛣</span>
+            <small>Road project<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Road Rehabilitation Works</div>
+        </div>
+
+        <div class="scroll-card">
+          <div class="scroll-card-img bg-construction-2">
+            <span style="font-size:3rem">🏗</span>
+            <small>Construction site<br>Replace with real photo</small>
+          </div>
+          <div class="scroll-card-caption">Active Construction Site</div>
+        </div>
+
+      </div><!-- end scroll-track row 2 -->
+    </div>
+
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="section why-us">
+    <div class="container why-us-inner">
+      <div class="why-us-text">
+        <h2>Why Clients Choose Kankitsi</h2>
+        <p>We are a local company with deep roots in Kasese. We understand the terrain, the people, and the challenges of doing business in the Rwenzori region.</p>
+        <div class="why-items">
+          <div class="why-item">
+            <span class="why-icon">✅</span>
+            <div>
+              <strong>Local Knowledge</strong>
+              <p>Years of experience in Kasese's unique environment — geography, regulations, and community needs.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">🤝</span>
+            <div>
+              <strong>End-to-End Service</strong>
+              <p>From sourcing materials and constructing buildings to supplying your office and financing your next venture.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">📋</span>
+            <div>
+              <strong>Transparent &amp; Accountable</strong>
+              <p>Clear contracts, honest pricing, and regular project updates — no surprises.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">⚡</span>
+            <div>
+              <strong>Responsive Team</strong>
+              <p>We respond to enquiries quickly and keep projects on schedule.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-placeholder large">
+        <span>📸</span>
+        <p>Company team or project photo</p>
+        <small>Replace with an approved company photo</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROJECTS ===== -->
+  <section class="section projects-preview">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recent Projects</h2>
+        <p>A sample of work delivered across Kasese and the Rwenzori region.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="image-placeholder">
+            <span>🏫</span>
+            <p>Project photo</p>
+            <small>Add approved photo</small>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Construction</span>
+            <h4>Classroom Block Construction</h4>
+            <p>Four-classroom block with offices and sanitation facilities. Delivered on time and within budget.</p>
+            <span class="project-meta">Kasese District · 2023</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="image-placeholder">
+            <span>🛣</span>
+            <p>Project photo</p>
+            <small>Add approved photo</small>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Civil Works</span>
+            <h4>Road Rehabilitation</h4>
+            <p>Grading and gravelling of access road, including culvert installation and drainage improvement.</p>
+            <span class="project-meta">Rwenzori Region · 2024</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="image-placeholder">
+            <span>🏢</span>
+            <p>Project photo</p>
+            <small>Add approved photo</small>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Supplies</span>
+            <h4>Office Furniture Supply</h4>
+            <p>Full office furniture set for a district government office, including desks, chairs, and storage units.</p>
+            <span class="project-meta">Kasese Town · 2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer-link">
+        <a href="projects.html" class="btn btn-secondary">View All Projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOAN HIGHLIGHT ===== -->
+  <section class="section loan-highlight">
+    <div class="container loan-highlight-inner">
+      <div class="loan-highlight-text">
+        <span class="section-label">Business Finance</span>
+        <h2>Need capital to grow your business?</h2>
+        <p>Kankitsi Company Limited offers business loans to help traders, contractors, and entrepreneurs in Kasese access the working capital they need — with straightforward terms and a local team you can talk to face to face.</p>
+        <ul class="loan-features">
+          <li>Fast application processing</li>
+          <li>Flexible repayment periods</li>
+          <li>No hidden charges</li>
+          <li>Personal, local service</li>
+        </ul>
+        <a href="loans.html" class="btn btn-accent">Find Out More</a>
+      </div>
+      <div class="loan-highlight-card">
+        <h3>How to Apply</h3>
+        <ol class="apply-steps">
+          <li><span>1</span> Contact us or visit our office</li>
+          <li><span>2</span> Discuss your needs with our team</li>
+          <li><span>3</span> Submit required documents</li>
+          <li><span>4</span> Receive a decision and your funds</li>
+        </ol>
+        <a href="contact.html" class="btn btn-outline">Get in Touch Today</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT STRIP ===== -->
+  <section class="contact-strip">
+    <div class="container contact-strip-inner">
+      <div class="contact-strip-text">
+        <h2>Ready to work with us?</h2>
+        <p>Get in touch today — whether you need a construction quote, supplies delivered, or information about a business loan.</p>
+      </div>
+      <div class="contact-strip-actions">
+        <a href="tel:+256000000000" class="btn btn-primary">📞 Call Us Now</a>
+        <a href="contact.html" class="btn btn-outline-light">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-icon">🏗</span>
+          <span class="logo-text">Kankitsi <span class="logo-thin">Company Limited</span></span>
+        </a>
+        <p>Construction, supplies, and business loans serving Kasese and the Rwenzori region of Uganda.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="construction.html">Construction &amp; Civil Works</a></li>
+          <li><a href="supplies.html">General Supplies</a></li>
+          <li><a href="loans.html">Business Loans</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>📍 Plot 6 Alexander Street, Kasese Municipality, Kasese District, Uganda</p>
+        <p>📞 <a href="tel:+256000000000">+256 000 000 000</a></p>
+        <p>✉️ <a href="mailto:info@kankitsi.co.ug">info@kankitsi.co.ug</a></p>
+        <p>🕐 Mon–Fri: 8:00am – 5:00pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2024 Kankitsi Company Limited. All rights reserved. | Registered in Uganda</p>
+        <p class="footer-disclaimer">Loan information on this site is for general guidance only. Final terms are subject to assessment and agreement. Please confirm all rates, fees, and conditions with our office before applying.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SLIDESHOW SCRIPT ===== -->
+  <script>
+    var current = 0;
+    var slides  = document.querySelectorAll('.hero-slide');
+    var dots    = document.querySelectorAll('.slide-dot');
+    var timer;
+
+    function showSlide(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function moveSlide(dir) { clearInterval(timer); showSlide(current + dir); startTimer(); }
+    function goToSlide(n)   { clearInterval(timer); showSlide(n);             startTimer(); }
+    function startTimer()   { timer = setInterval(function(){ showSlide(current + 1); }, 5000); }
+
+    startTimer();
+  </script>
+
+</body>
+</html>
